@@ -126,7 +126,7 @@ while True:
                         cv2.FONT_HERSHEY_COMPLEX, 0.6, (100,100,100), 1)
                     #Center name
                     (w,h),_=cv2.getTextSize(studentInfo['name'],cv2.FONT_HERSHEY_COMPLEX,1,1)
-                    offset=414-w//2
+                    offset=(414-w)//2
                     cv2.putText(imgBackground, str(studentInfo['name']), (808+offset, 445),
                         cv2.FONT_HERSHEY_COMPLEX, 1, (50, 50, 50), 1)
 
